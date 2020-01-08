@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "./cortex.elf",
+            "name": "Debug elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": [
+                "./nucleo-f0.cfg"
+            ],
+            "armToolchainPath": "",
+            "svdFile": "./svd/STM32F0x2.svd",
+            "preLaunchTask": "make elf",
+        },
+    ]
+}
